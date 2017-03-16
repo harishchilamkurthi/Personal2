@@ -1,0 +1,51 @@
+/*Element*/
+li{
+
+}
+/*class*/
+.hello{
+	border: 2px dotted yellow;
+}
+/*id*/
+#name{
+	background: green;
+}
+/*star*/
+*{
+	border: 1px solid lightgrey;
+}
+/*Descendent selector*/
+/*if we want to select all the a's which are descendants/under
+ of li, we use the following */
+li a{ /*or ul li a{} or li .hello or li .id*/
+color: red;
+}
+
+/*Adjacent selector*/
+h4 + ul{ /*this means we are selecting all the ul's right after h4
+, if there is no +, it means that its descendant selector(all ul's 
+inside h4)*/
+border: 4px solid red;
+}
+
+/*Attribute selector*/
+a[href="http://www.google.com"]{/*this will select all the 
+href's under anchor tag*/
+background:blue;
+}
+/*input[type="checkbox"]{
+	background: blue;
+}*/
+
+/*nth of type*/
+/*ul:nth-of-type(3){ /*this is used to select particular line 
+	this selects only the 3rd ul
+
+	background: purple;  
+}*/
+li:nth-of-type(3)
+/*if we put "even" instead of a number, then every third element 
+	will turn purple.*/
+{
+	background:purple;
+}

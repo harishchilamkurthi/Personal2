@@ -1,0 +1,18 @@
+/*body
+{
+	background-color: orange;
+}*/
+li
+{
+	border: 2px solid red;
+}
+#special
+{
+	background-color: yellow;	
+}
+.completed
+{
+	text-decoration: line-through;
+	 /* The text-decoration CSS property is used to set the text formatting to
+	  underline, overline, line-through or blink*/
+}

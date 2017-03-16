@@ -1,0 +1,42 @@
+/*star selects all the elements */
+
+*{
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selectors*/
+li a{	/*this will select all a's inside li*/
+color: red;
+}
+
+/*adjacent selector*/
+/*it will select elements AFTER the selected element*/
+h4+ul{ /*this means we are selecting all the ul elements after h4*/
+border: 4px dotted yellow;
+}
+
+/*attribute selector*/
+/*if we want to target a particular element*/
+/*syntax:a[attribute to select]*/
+a[href="http://www.google.com"]{
+	background: orange;
+}
+
+/*or 
+input[type:"text"]{
+	background: red;
+}*/
+
+/*nth of type*/
+/*it takes a number and selects nth of that number*/
+/*if we want to select every 10 paragraph of page*/
+
+ul:nth-of-type(3){
+	background:purple;
+	/*this turns the 3rd ul to purple.*/
+}
+ul:nth-of-type(even){/*this turs every even or odd 
+	elements to purple*/
+	background:purple;
+	/*this turns the 3rd ul to purple.*/
+}

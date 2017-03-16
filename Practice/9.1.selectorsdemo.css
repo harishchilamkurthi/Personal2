@@ -1,0 +1,10 @@
+*{
+	border: 1px solid grey;
+}
+/*descendant selector*/
+li a{
+	background: red;
+}
+
+/*adjacent selector*/
+li
