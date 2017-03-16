@@ -1,0 +1,17 @@
+.main {
+			width: 1195px;
+			height: 480px;
+			padding-top: 32px ;
+			padding-left: 78px;
+
+		}
+
+.tab{
+	background-color: #d6513f;
+			float: left;
+			margin: 22px;
+			width: 252px;
+			height: 150px;
+			text-align: auto;
+			overflow: auto;
+}
