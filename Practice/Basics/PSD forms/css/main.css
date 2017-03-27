@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,canvas,iframe,img,svg,video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+ /*Helper classes*/
+  
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* Author's custom styles */
+
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #e94643;
+    height:80px;
+    border-top: 20px solid #04e4a2;
+}
+
+.featured,
+.navbar {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 20px 0 20px 144px;
+    display: block;
+    float: left;
+}
+
+.menu {
+    float: right;
+    margin: 29px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid #fdd835;
+}
+
+.featured {
+    overflow: hidden;
+}
+.featured-text,
+.phone {
+    width: 600px;
+    float: left;
+    z-index: 10;
+    position: relative;
+}
+
+.green-element {
+    background: url("../img/green-element.png") no-repeat;
+    width: 667px;
+    height: 698px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.phone {
+    height: 818px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.featured-text {
+
+}
