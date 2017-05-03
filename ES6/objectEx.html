@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ObjectExample</title>
+</head>
+<body>
+	<script>
+		// //object literal
+		// 	var age=21;
+		// 	var customer={
+		// 		age:age,
+		// 		name:'john',
+		// 		printDetails:function(){
+		// 			console.log(this.age,this.name);
+		// 		}
+		// 	}	
+
+		//	customer.printDetails();
+			var age=21;
+			var customer={
+				age,
+				name:'john',
+				printDetails(){
+					console.log(this.age,this.name);
+				}
+			}	
+
+			customer.printDetails();
+
+	</script>
+</body>
+</html>
