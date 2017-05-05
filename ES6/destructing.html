@@ -10,7 +10,15 @@
 		//we can give as an expression and we get  individual elements which is called destructuring.
 		var [a,b,c] = numbers;
 
-		console.log(a,b,c);
+		let customer={
+			age:21,
+			name:'john'
+		}
+
+		let{age:myAge, name}=customer;
+
+
+		console.log(myAge, name);
 
 
 
