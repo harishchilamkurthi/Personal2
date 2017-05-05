@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string templates</title>
+</head>
+<body>
+		<div id="mailMessage">
+		</div>
+
+
+	<script>
+			var mailDetails={
+			to:'siva@yahoo.com',
+			from:'keethana@gmail.com',
+			// printSubject: function(){
+
+			// var subject =
+			// `Hi, 
+			// How are you. This is ${this.to} I am doing good and I will see you for diwali.   
+			// 	Thanks
+			// 	- ${this.from}`
+
+			// 	console.log(subject);
+
+			// }
+
+		}
+
+		function celebrateDiwaliEvent(mailDetails){
+			var message=`
+			Hi,
+				This is ${mailDetails.from} and we are going to celebrate diwali at xxxx address and you are all invited.
+			Thanks,
+			${mailDetails.from}`
+			
+			return message; 
+
+		}
+
+		// mailDetails.printSubject();
+		document.getElementById("mailMessage").innerText=
+		celebrateDiwaliEvent(mailDetails);
+
+	</script>
+
+
+</body>
+</html>
