@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+		//spread
+		var OneTo5=[1,2,3,4,5];
+		var SixTo10=[6,7,8,9,10];
+
+		// var OneTo10=[];
+
+		// OneTo5.forEach((number)=>{
+		// 	OneTo10.push(number);
+		// });
+		// SixTo10.forEach((number)=>{
+		// 	OneTo10.push(number);
+		// });
+
+		// Implementing ES6 feature
+		//spread
+
+		var OneTo10=[...OneTo5, ...SixTo10];
+		//concatenation can be dine very easily
+		var OneTo10=[0,...OneTo5, ...SixTo10,11];
+
+		console.log(OneTo10);
+		
+		//rest--is reverse of spread
+		// when we give ...numbers, numbers will be converted to array
+		function sort(...numbers){
+
+			var sortedArray=numbers.sort();
+
+			console.log("Sorted array is "+sortedArray);
+
+		}
+
+		sort(5,8,11,6,7,9,1);
+
+		</script>
+	</body>
+</html>
