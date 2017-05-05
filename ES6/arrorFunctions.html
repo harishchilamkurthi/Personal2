@@ -23,6 +23,18 @@
 
 		prepend("john", (name)=> "Mr " + name);
 		
+		var customer={
+			name:'john',
+			age:21,
+			printDetailFunc:function(){
+				
+				return ()=>{
+					console.log(this.name,this.age);
+				}
+			}
+		}
+		customer.printDetailFunc()();
+
 	</script>
 
 </body>
