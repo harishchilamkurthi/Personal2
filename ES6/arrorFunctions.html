@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var numbers=[1,2,3,4];	
+
+		// numbers.forEach((function(number)){
+		// 	console.log(number);
+		// })
+
+		numbers.forEach((number) => {
+			console.log(number);
+		});
+
+
+		function prepend(name, callback){
+			var formattedName=callback(name);
+			console.log(formattedName);
+		}
+
+		prepend("john", (name)=> "Mr " + name);
+		
+	</script>
+
+</body>
+</html>
