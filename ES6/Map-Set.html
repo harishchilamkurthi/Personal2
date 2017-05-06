@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+
+			//object literal
+			// let myObj={
+			// 	 name:"john",
+			// 	 age:21
+			// }
+
+			//map
+			// let myObj = new Map();
+			// myObj.set("name","john");	
+			// myObj.set("age",21);
+
+			// console.log(myObj.get("name"));	
+
+
+			// let myMap = new Map([['a1','hello'],['b2','goodbye']]);
+			// myMap.set('c3','foo');
+			// myMap.delete('a1');
+			// console.log(myMap);
+
+			// for(let k of myObj.entries()){
+			// 	console.log(k[0],k[1]);
+			// }
+
+			//set--u can store unique values in set,i.,e no duplicate values will be save..
+			// we can also print keys and values like in hashmaps.
+
+			// let myArray=[11,22,33,44,55,84];
+			// let mySet = new Set(myArray);
+			// mySet.add('1');
+			// mySet.add("2");
+			// mySet.add("3");
+			// mySet.add("1");
+			// mySet.add({a:1,b:2});
+			// mySet.delete(22);
+
+			// // console.log(mySet);
+			// //loop
+			// mySet.forEach(function(val){
+			// 	console.log(val)
+			// })
+
+			//weak set
+
+			// let carWeakSet=new WeakSet();
+
+			// let car1={
+			// 	make:'honda',
+			// 	year:'1989',
+			// 	model:'civic'
+			// }
+
+			// carWeakSet.add(car1);
+
+			// let car2={
+			// 	make:'Toyota',
+			// 	year:'1990',
+			// 	model:'camry'
+			// }
+
+			// carWeakSet.add(car2);
+			// carWeakSet.delete(car1);
+
+
+			// console.log(carWeakSet);
+
+			//
+
+			let carWeakMap = new WeakMap();
+
+			let key1={
+				id:1
+			}
+
+			let car1={
+				make:'honda',
+				year:'1989',
+				model:'civic'
+			}
+
+			let key2={
+				id:2
+			}
+
+			let car2={
+				make:'Toyota',
+				year:'1990',
+				model:'camry'
+			}
+
+			carWeakMap.set(key1,car1);
+			carWeakMap.set(key2,car2);
+
+			carWeakMap.delete(key1);
+
+			console.log(carWeakMap);
+
+		</script>
+	</body>
+</html>

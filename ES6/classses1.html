@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+	class Account{
+		constructor(accountNo){
+			this.accountNo=accountNo;
+		}
+		printDetails(){
+			console.log(this.accountNo);
+		}
+	}
+
+
+	
+	class BankAccount extends Account{ //every class in ES6 has a special function called constructor where u can pass construtor related variables. 
+
+
+		constructor(accountNo,accountHolder){
+			super(accountNo);
+			this.accountHolder=accountHolder;
+		};
+
+		set accountHolder(newValue){ //set method is called as soon as we execute this statement .......bankAccount.accountHolder="daniel";
+			//this statement makes the account holder go loop.......this.accountHolder=newValue;
+			// to avoid that we use a temporary variable _accountHolder
+			this._accountHolder = newValue;
+			
+			this.lastUpdatedDate = new Date();
+
+		}
+
+		get accountHolder(){
+			return this._accountHolder;
+		}
+
+
+
+		printDetails(){ //overriding
+			super.printDetails();
+			console.log(this.accountHolder, this.lastUpdatedDate);
+		}
+
+		//static function
+			static printClassInfo(){
+				// count++;
+				console.log("the class name is BankAccount");
+			}
+
+
+	}
+		
+	let bankAccount = new BankAccount(101,"john");
+	bankAccount.accountHolder="daniel";
+
+	bankAccount.printDetails();
+
+	BankAccount.printClassInfo();
+
+	</script>	
+</body>
+</html>
