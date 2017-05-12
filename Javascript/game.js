@@ -1,7 +1,8 @@
 //create secrenumber
 var secretNumber=4;
 //ask for guess
-var stringGuess = Number(prompt("Guess a number"));
+var stringGuess = prompt("Guess a number");
+var guess = Number(stringGuess);
 
 //check guess
 if(guess === secretNumber){
@@ -11,7 +12,7 @@ if(guess === secretNumber){
 // else{
 // 	alert("wrong");
 // }
-//otherwise, check if heigher
+//otherwise, check if higher
 else if (guess> secretNumber) {
 	alert("too high. try again");
 }
