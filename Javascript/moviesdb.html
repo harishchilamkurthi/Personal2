@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var movies=[
+		{
+			title:"in bruges",
+			hasWatched: true,
+			rating: 5
+		},{
+			title:"frozen",
+			hasWatched:false,
+			rating: 4
+		},{
+			title:"Les Miserable",
+			hasWatched: false,
+			rating: 3.5
+		},{
+			title:"Logan",
+			hasWatched: true,
+			rating: 5
+		}];	
+		
+		function buildString(movie){
+			var result = "You have";
+			if(movie.hasWatched){
+				result += "watched";
+			}else{
+				result += "not seen";
+			}
+			result += "\"" + movie.title + "\" - ";
+			result += movie.rating + " stars";
+			return result;
+		}
+		movies.forEach(function(movie){
+			buildString(movie);
+			console.log(buildString(movie));
+		});
+
+	</script>
+</body>
+</html>
